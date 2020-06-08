@@ -1,0 +1,26 @@
+<!-- twitter/templates/tweets.html -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    <title>All the Tweets</title>
+{% endblock %}
+
+{% block content %}
+
+    <h2>Welcome to the Page of Tweets</h2>
+
+    <p>{{ message }}</p>
+
+    {% if books %}
+        <ul>
+        {% for book in books %}
+            <li>{{ book["content"] }}</li>
+        {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>Missing da tweets</p>
+    {% endif %}
+
+{% endblock %}

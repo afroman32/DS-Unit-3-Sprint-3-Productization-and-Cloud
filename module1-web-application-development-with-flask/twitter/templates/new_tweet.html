@@ -1,0 +1,19 @@
+<html>
+    <h1>New Tweet</h1>
+
+    <p>Please fill out the form to make a new tweet</p>
+
+    <form action="/tweet/create" method="POST">
+
+        <label>Content:</label>
+        <input type="text" name="content" placeholder="Exciting Stuff " value="Exciting Stuff ">
+
+        <label>User:</label>
+        <select name="User_name">
+          <option value="@theMan">@theMan</option>
+          <option value="@Octane">@Octane</option>
+        </select>
+
+        <button>Submit</button>
+    </form>
+    </html>
