@@ -12,10 +12,10 @@
 
     <p>{{ message }}</p>
 
-    {% if books %}
+    {% if tweets %}
         <ul>
-        {% for book in books %}
-            <li>{{ book["content"] }}</li>
+        {% for tweet in tweets %}
+            <li>{{ tweet["content"] }}</li>
         {% endfor %}
         </ul>
 
