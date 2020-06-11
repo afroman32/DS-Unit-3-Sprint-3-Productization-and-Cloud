@@ -1,14 +1,22 @@
-<html>
-    <h1>New User </h1>
+{% extends "layout.html" %}
+
+{% block title %}
+    <title>All the Users</title>
+{% endblock %}
+
+{% block content %}
+
+    <h2>Add new user</h2>
 
     <p>Type a username to add their tweets</p>
 
     <form action="/create_user", method="POST">
 
-        <label>Content:</label>
+        <label>Username:</label>
         <input type="text" name="user" placeholder="elonmusk" value="elonmusk">
 
 
         <button>Submit</button>
     </form>
-    </html>
+
+{% endblock %}
